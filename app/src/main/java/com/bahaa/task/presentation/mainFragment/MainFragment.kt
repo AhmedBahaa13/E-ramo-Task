@@ -27,7 +27,6 @@ import taimoor.sultani.sweetalert2.Sweetalert
 @AndroidEntryPoint
 class MainFragment : Fragment() {
     private lateinit var binding: FragmentMainBinding
-    private lateinit var loadingDialog: Sweetalert
     private val viewModel: MainViewModel by viewModels()
 
     override fun onCreateView(
@@ -35,10 +34,6 @@ class MainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentMainBinding.inflate(inflater)
-        loadingDialog = Sweetalert(requireContext(), Sweetalert.PROGRESS_TYPE)
-        loadingDialog.progressHelper.barColor = Color.parseColor("#A5DC86")
-        loadingDialog.titleText = getString(R.string.loading)
-        loadingDialog.setCancelable(false)
         viewModel.getTopStores()
         return binding.root
     }
@@ -51,11 +46,11 @@ class MainFragment : Fragment() {
             viewModel.topStores.collect {
                 when (it) {
                     is Response.Loading -> {
-                        loadingDialog.show()
+//                        loadingDialog.show()
                     }
 
                     is Response.Success -> {
-                        loadingDialog.dismiss()
+//                        loadingDialog.dismiss()
                         topStoresAdapter.submitList(it.data)
                     }
 

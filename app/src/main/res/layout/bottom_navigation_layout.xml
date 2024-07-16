@@ -3,8 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:layout_gravity="bottom"
-    android:layout_height="wrap_content">
+    android:elevation="@dimen/_5sdp"
+    android:background="@android:color/transparent"
+    android:backgroundTint="@android:color/transparent">
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -26,16 +29,16 @@
         android:id="@+id/add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_20sdp"
         android:layout_marginBottom="@dimen/_35sdp"
         android:backgroundTint="#FFB400"
         android:contentDescription="@string/todo"
         android:src="@drawable/baseline_add_24"
-        android:layout_marginEnd="@dimen/_20sdp"
+        app:fabCustomSize="@dimen/_35sdp"
         app:layout_constraintBottom_toBottomOf="@+id/fab"
         app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
         app:layout_constraintTop_toTopOf="@+id/fab"
         app:maxImageSize="@dimen/_30sdp"
-        app:fabCustomSize="@dimen/_35sdp"
         app:shapeAppearanceOverlay="@style/CornerRound"
         app:tint="@color/white" />
 
@@ -45,7 +48,6 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_12sdp"
         android:background="@drawable/frame"
-        android:elevation="-10dp"
         android:paddingTop="@dimen/_12sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

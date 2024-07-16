@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:paddingBottom="@dimen/_65sdp"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/_80sdp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -379,9 +379,8 @@
             android:id="@+id/featured_deals"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="@dimen/_16sdp"
             android:paddingStart="@dimen/_12sdp"
-            >
+            android:paddingTop="@dimen/_16sdp">
 
             <TextView
                 android:id="@+id/featured_deals_title"
@@ -439,8 +438,8 @@
             android:id="@+id/recent_categories"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="@dimen/_16sdp"
             android:paddingStart="@dimen/_12sdp"
+            android:paddingTop="@dimen/_16sdp"
             app:layout_constraintTop_toBottomOf="@+id/small_deals_banner"
             tools:layout_editor_absoluteX="16dp">
 
@@ -509,8 +508,8 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/_110sdp"
             android:layout_marginStart="@dimen/_12sdp"
-            android:layout_marginEnd="@dimen/_12sdp"
-            android:layout_marginTop="@dimen/_18sdp"/>
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_12sdp" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/today_deals"
