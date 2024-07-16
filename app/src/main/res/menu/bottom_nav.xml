@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/coupons"
+        android:title="@string/coupons"
+        android:icon="@drawable/coupons_ic"/>
+
+    <item android:id="@+id/categories"
+        android:title="@string/categories"
+        android:icon="@drawable/categories_ic" />
+
+    <item android:id="@+id/placeholder"
+        android:title="" />
+
+    <item android:id="@+id/brands"
+        android:title="@string/brands"
+        android:icon="@drawable/brands_ic"/>
+
+    <item android:id="@+id/settings"
+        android:title="@string/settings"
+        android:icon="@drawable/settings_ic"/>
+
+
+</menu>

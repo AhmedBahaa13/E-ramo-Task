@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_115sdp"
+    android:layout_height="@dimen/_130sdp"
+    android:layout_marginEnd="@dimen/_12sdp"
+    app:cardCornerRadius="@dimen/_12sdp"
+    app:strokeColor="@color/main_color"
+    app:strokeWidth="@dimen/_1sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_6sdp"
+        android:paddingTop="@dimen/_6sdp">
+
+        <ImageView
+            android:id="@+id/share_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:src="@drawable/share_ic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/heart_ic"
+            app:layout_constraintBottom_toBottomOf="@+id/share_ic"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/brand_logo"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:scaleType="centerInside"
+            android:src="@drawable/top_store_img1"
+            app:layout_constraintEnd_toStartOf="@+id/imageView9"
+            app:layout_constraintStart_toEndOf="@+id/share_ic"
+            app:layout_constraintTop_toBottomOf="@id/share_ic"
+            app:shapeAppearanceOverlay="@style/CouponItemShape" />
+
+        <TextView
+            android:id="@+id/coupon_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/cairo_bold"
+            android:text="@string/up_to_50_off"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintEnd_toEndOf="@+id/brand_logo"
+            app:layout_constraintStart_toStartOf="@+id/brand_logo"
+            app:layout_constraintTop_toBottomOf="@+id/brand_logo" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:src="@drawable/use_code_img"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/coupon_percentage"
+            app:layout_constraintStart_toStartOf="@+id/coupon_percentage"
+            app:layout_constraintTop_toBottomOf="@+id/coupon_percentage" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

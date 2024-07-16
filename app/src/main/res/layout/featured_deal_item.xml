@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_12sdp"
+    app:cardCornerRadius="@dimen/_12sdp"
+    app:strokeColor="@color/main_color"
+    app:strokeWidth="@dimen/_1sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_6sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:elevation="@dimen/_3sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_6sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/top_store_img1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/CouponItemShape" />
+
+        <TextView
+            android:id="@+id/dealPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/gilroy_medium"
+            android:text="@string/deal_percentage"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/logo"
+            app:layout_constraintTop_toTopOf="@+id/logo"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/gilroy_regular"
+            android:text="50 % from Saudi market \n when you used coupon"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toStartOf="@+id/dealPercentage"
+            app:layout_constraintTop_toBottomOf="@+id/dealPercentage" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/materialButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:backgroundTint="#FFB400"
+            android:fontFamily="@font/cairo_bold"
+            android:paddingVertical="@dimen/_4sdp"
+            android:text="@string/get_deal_now"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/_11ssp"
+            app:cornerRadius="8dp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/dealPercentage"
+            app:layout_constraintStart_toStartOf="@+id/description"
+            app:layout_constraintTop_toBottomOf="@+id/description" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
